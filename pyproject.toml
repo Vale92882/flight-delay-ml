@@ -1,0 +1,18 @@
+[project]
+name = "flight-delay-ml"
+version = "0.1.0"
+description = "Explore recorded flight weather delays with DuckDB and SQL"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb==2.0.0",
+    "huggingface-hub>=1.33.0",
+    "ipykernel==7.4.0",
+    "ipython>=9.17.1",
+    "matplotlib==3.11.2",
+    "nbclient==0.11.0",
+    "nbformat==5.11.1",
+    "notebook>=7.6.3",
+    "pandas==2.3.3",
+    "pyarrow==24.0.0",
+]

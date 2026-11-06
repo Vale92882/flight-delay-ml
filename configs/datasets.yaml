@@ -1,0 +1,17 @@
+datasets:
+  flight_delay:
+    source: kaggle
+    id: robikscube/flight-delay-dataset-20182022
+    path: data/flight_delay
+    extension: .parquet
+  bts_flights_weather:
+    source: huggingface
+    id: Arimancy/bts-flights-weather
+    path: data/bts_flights_weather
+    extension: .parquet
+  mendeley_flight_departure_delay:
+    source: mendeley
+    id: j3zfnxk56h
+    version: 2
+    path: data/mendeley_flight_departure_delay
+    extension: .csv

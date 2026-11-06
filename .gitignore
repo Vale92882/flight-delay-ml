@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Downloaded flight data and local notebook state
+data/
+.ipynb_checkpoints/
