@@ -18,7 +18,6 @@ Move into the project directory, then install the notebook dependencies:
 cd flight-delay-ml
 uv sync
 ```
-
 ## Data
 
 Download the [BTS flights and weather dataset](https://huggingface.co/datasets/Arimancy/bts-flights-weather):

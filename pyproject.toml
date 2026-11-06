@@ -5,6 +5,7 @@ description = "Explore recorded flight weather delays with DuckDB and SQL"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "autogluon-tabular[all]>=1.6.1",
     "duckdb==2.0.0",
     "huggingface-hub>=1.33.0",
     "ipykernel==7.4.0",
@@ -15,4 +16,15 @@ dependencies = [
     "notebook>=7.6.3",
     "pandas==2.3.3",
     "pyarrow==24.0.0",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
 ]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform != 'darwin'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform != 'darwin'" }]
